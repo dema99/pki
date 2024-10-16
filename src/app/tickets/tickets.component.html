@@ -1,0 +1,27 @@
+@for (projekcija of projekcije; track projekcija) {
+    <div class="container">
+    <mat-card class="example-card" appearance="outlined">
+        <mat-card-content>
+            <h2>{{projekcija.film.name}}</h2>
+            <p>
+                Duration: {{projekcija.film.duration}} min
+                <br>
+                Genre: {{projekcija.film.genre}}
+                <br>
+                Cast: {{projekcija.film.actors}}
+                <br>
+                Producer: {{projekcija.film.producer}}
+                <br>
+                Price: {{projekcija.price}} $
+                <br>
+                Date: {{projekcija.startingAt}}
+            </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button (click)="book(projekcija)" mat-button>Book Now</button>
+        </mat-card-actions>
+    </mat-card>
+
+</div>
+<button (click)="openCart()" class="button-cart"><i class="fa-solid fa-cart-shopping"></i></button>
+}

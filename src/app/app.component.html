@@ -1,0 +1,12 @@
+<mat-toolbar color="primary">
+  <span>Demaplex</span>
+  <span class="spacer"></span>
+  <a routerLink="/" mat-button>Home</a>
+  <a routerLink="/tickets" mat-button>Tickets</a>
+  <a routerLink="/profile" mat-button *ngIf="userService.hasCurrentUser(); else profile">Profile</a>
+</mat-toolbar>
+<router-outlet />
+
+<ng-template #profile>
+  <a routerLink="/login" mat-button>Login</a>
+</ng-template>

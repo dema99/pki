@@ -1,0 +1,28 @@
+p {
+    color: white !important;
+}
+h2   {
+    color: white !important;
+}
+
+.example-card {
+    max-width: 400px;
+    margin-top: 30px;
+}
+
+
+.container {
+    background-color: black;
+    margin-top: 30px;
+    display:grid;
+    justify-content: space-evenly;
+}
+
+.button-cart {
+        position: fixed;
+        padding: 3px;
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 30px;
+}

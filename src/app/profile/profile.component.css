@@ -1,0 +1,11 @@
+p{
+    color: white;
+}
+.example-card {
+    max-width: 400px;
+    margin-top: 30px;
+}
+.profile-card {
+    display: flex;
+    justify-content: center;
+}
